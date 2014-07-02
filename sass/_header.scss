@@ -1,0 +1,12 @@
+header {
+	height: 40px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background: red;
+	z-index: 2;
+	p {
+		float: right;
+		padding: 10px 15px 0 0;
+	}
+}

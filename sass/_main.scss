@@ -1,0 +1,15 @@
+section {
+	height: 500px;
+	border-top: 1px solid black;
+	background: grey;
+	z-index: 1;
+	p {
+		width: 300px;
+		position: absolute;
+		top: 35%;
+		left: 50%;
+		margin-left: -150px;
+		text-align: center;
+		line-height: 25px;
+	}
+}
