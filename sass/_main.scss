@@ -13,3 +13,16 @@ section {
 		line-height: 25px;
 	}
 }
+
+.triangle-divide {
+	height: 0;
+	width: 0;
+	position: absolute;
+	top: 501px;
+	left: 50%;
+	margin-left: -20px;
+	border-top: 20px solid #f00;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	z-index: 2;
+}
