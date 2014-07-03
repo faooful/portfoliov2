@@ -91,11 +91,11 @@ section {
 }
 /* line 6, ../sass/_main.scss */
 section p {
-  width: 300px;
+  width: 50%;
   position: absolute;
   top: 35%;
   left: 50%;
-  margin-left: -150px;
+  margin-left: -25%;
   text-align: center;
   line-height: 25px;
 }
@@ -108,7 +108,7 @@ section p {
   top: 501px;
   left: 50%;
   margin-left: -20px;
-  border-top: 20px solid #f00;
+  border-top: 20px solid black;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   z-index: 2;
