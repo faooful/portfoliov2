@@ -1,7 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 17, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,11 +66,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* line 1, ../sass/_typography.scss */
 body {
   font-family: 'Merriweather', serif;
+  font-weight: 300;
 }
 
 /* line 1, ../sass/_main.scss */
 .section-padding {
-  padding: 240px 0;
+  padding: 120px 0;
 }
 
 /* line 5, ../sass/_main.scss */
@@ -84,7 +81,12 @@ body {
   margin: 0 auto;
 }
 
-/* line 1, ../sass/nav.scss */
+/* line 11, ../sass/_main.scss */
+section {
+  text-align: center;
+}
+
+/* line 1, ../sass/_nav.scss */
 nav {
   height: 40px;
   width: 100%;
@@ -93,7 +95,7 @@ nav {
   background: red;
   z-index: 2;
 }
-/* line 8, ../sass/nav.scss */
+/* line 8, ../sass/_nav.scss */
 nav p {
   float: right;
   padding: 10px 15px 0 0;
@@ -101,15 +103,18 @@ nav p {
 
 /* line 1, ../sass/_header.scss */
 header {
+  padding: 200px 0;
   margin-top: 40px;
   text-align: center;
 }
-/* line 4, ../sass/_header.scss */
+/* line 5, ../sass/_header.scss */
 header h1 {
   margin-bottom: 40px;
+  font-size: 22px;
 }
-/* line 7, ../sass/_header.scss */
+/* line 9, ../sass/_header.scss */
 header h2 {
-  max-width: 600px !important;
-  line-height: 2;
+  max-width: 400px !important;
+  line-height: 2.2;
+  font-size: 17px;
 }
