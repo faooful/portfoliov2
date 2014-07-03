@@ -67,8 +67,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 1, ../sass/_header.scss */
-header {
+/* line 1, ../sass/_typography.scss */
+body {
+  font-family: 'Merriweather', serif;
+}
+
+/* line 1, ../sass/_main.scss */
+.section-padding {
+  padding: 240px 0;
+}
+
+/* line 5, ../sass/_main.scss */
+.align-center {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/nav.scss */
+nav {
   height: 40px;
   width: 100%;
   position: fixed;
@@ -76,40 +93,23 @@ header {
   background: red;
   z-index: 2;
 }
-/* line 8, ../sass/_header.scss */
-header p {
+/* line 8, ../sass/nav.scss */
+nav p {
   float: right;
   padding: 10px 15px 0 0;
 }
 
-/* line 1, ../sass/_main.scss */
-section {
-  height: 500px;
-  border-top: 1px solid black;
-  background: grey;
-  z-index: 1;
-}
-/* line 6, ../sass/_main.scss */
-section p {
-  width: 50%;
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  margin-left: -25%;
+/* line 1, ../sass/_header.scss */
+header {
+  margin-top: 40px;
   text-align: center;
-  line-height: 25px;
 }
-
-/* line 17, ../sass/_main.scss */
-.triangle-divide {
-  height: 0;
-  width: 0;
-  position: absolute;
-  top: 501px;
-  left: 50%;
-  margin-left: -20px;
-  border-top: 20px solid black;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  z-index: 2;
+/* line 4, ../sass/_header.scss */
+header h1 {
+  margin-bottom: 40px;
+}
+/* line 7, ../sass/_header.scss */
+header h2 {
+  max-width: 600px !important;
+  line-height: 2;
 }
