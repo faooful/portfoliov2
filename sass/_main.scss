@@ -1,13 +1,23 @@
+section {
+	text-align: center;
+}
+
 .section-padding {
 	padding: 120px 0;
 }
 
 .align-center {
 	width: 100%;
-	max-width: 1000px;
 	margin: 0 auto;
 }
 
-section {
-	text-align: center;
+.triangle-divide {
+	height: 0;
+	width: 0;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	border-left: 30px solid transparent;
+	border-right: 30px solid transparent;
+	border-top: 30px solid white;
 }

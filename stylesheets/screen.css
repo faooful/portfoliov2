@@ -63,6 +63,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+/* line 3, ../sass/_colours.scss */
+.lred {
+  background: #ff9580;
+  color: white;
+}
+
 /* line 1, ../sass/_typography.scss */
 body {
   font-family: 'Merriweather', serif;
@@ -70,20 +76,31 @@ body {
 }
 
 /* line 1, ../sass/_main.scss */
+section {
+  text-align: center;
+}
+
+/* line 5, ../sass/_main.scss */
 .section-padding {
   padding: 120px 0;
 }
 
-/* line 5, ../sass/_main.scss */
+/* line 9, ../sass/_main.scss */
 .align-center {
   width: 100%;
-  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* line 11, ../sass/_main.scss */
-section {
-  text-align: center;
+/* line 14, ../sass/_main.scss */
+.triangle-divide {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 30px solid white;
 }
 
 /* line 1, ../sass/_nav.scss */
@@ -92,10 +109,9 @@ nav {
   width: 100%;
   position: fixed;
   top: 0;
-  background: red;
   z-index: 2;
 }
-/* line 8, ../sass/_nav.scss */
+/* line 7, ../sass/_nav.scss */
 nav p {
   float: right;
   padding: 13px 15px 0 0;
