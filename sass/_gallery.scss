@@ -1,0 +1,27 @@
+.gallery {
+}
+
+#gallery-l {
+  float: left;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0;
+}
+#gallery-r {
+  float: left;
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 0;
+}
+
+#gallery-l img, #gallery-r img {
+  width: 100%;
+}
