@@ -4,11 +4,15 @@ header {
 	text-align: center;
 	h1 {
 		margin-bottom: 40px;
+		display: inline-block;
 		font-size: 22px;
 	}
-	h2 {
-		max-width: 400px !important;
-		line-height: 2.2;
-		font-size: 17px;
-	}
+}
+
+#full-height {
+	height: 2000px;
+}
+
+.arrow {
+	padding-top: 200px;
 }

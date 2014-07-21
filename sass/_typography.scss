@@ -1,4 +1,17 @@
 body {
 	font-family: 'Merriweather', serif;
 	font-weight: 300;
+	color: $black;
+}
+
+h2 {
+	max-width: 400px !important;
+	margin: 0 auto;
+	line-height: 2.2;
+	font-size: 17px;
+}
+
+a {
+	@include unstyled-link;
+	border-bottom: 1px dotted black;
 }

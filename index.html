@@ -18,16 +18,44 @@
 	<p>Home</p>
 </nav>
 
-<header class="align-center">
-	<h1>This is a point</h1>
-	<h2 class="align-center">This is another point with maybe some explnation behind it This is another point with maybe some explnation behind it This is another point with maybe some explnation behind it</h2>
+<header id="full-height" class="align-center">
+	<h1 id="typed-effect"></h1>
+	<h2 class="align-center">I am currently working for the start-up <a href="http:/invstr.com" target="blank">invstr</a> as a Graphic and Web designer.</h2>
+    <img class="arrow" src="img/arrow.png">
 </header>
 
-<div class="triangle-divide"></div>
-
 <section class="section-padding align-center lred">
-	<h1 class="align-center">this is a test</h1>
+	<h1>Who am I</h1>
+    <h2 class="align-centre">I'm a fanatic of design and web development. I'm incredibly passtionate about what I do and I love to be able to follow briefs or contribute creatively.</h2>
+    <div class="button align-center">CV</div>
 </section>
+
+<section class="section-padding align-center">
+    <h1>Contact</h1>
+    <h2 class="align-centre">Got an idea or want or want to chat?</h2>
+    <h2><a href="mailto:faooful@gmail.com">faooful@gmail.com</a></h2>
+</section>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/typed.js"></script>
+<script>
+  $(function(){
+      $("#typed-effect").typed({
+        strings: ["I consume cereal"],
+        typeSpeed: 30
+      });
+  });
+</script>
+
+<script>
+    var fullHeight = document.getElementById('full-height');
+    fullHeight.style.height =  (window.innerHeight || document.documentElement.clientHeight) - 400 + 'px';
+     
+    window.onresize = function() {
+        fullHeight.style.height =  (window.innerHeight || document.documentElement.clientHeight) - 400 + 'px';
+    };
+</script>
 
 </body>
 

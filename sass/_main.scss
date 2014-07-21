@@ -1,5 +1,10 @@
 section {
 	text-align: center;
+	h1 {
+		margin-bottom: 40px;
+		font-size: 32px;
+		font-weight: 700;
+	}
 }
 
 .section-padding {
@@ -9,15 +14,4 @@ section {
 .align-center {
 	width: 100%;
 	margin: 0 auto;
-}
-
-.triangle-divide {
-	height: 0;
-	width: 0;
-	position: absolute;
-	left: 50%;
-	margin-left: -30px;
-	border-left: 30px solid transparent;
-	border-right: 30px solid transparent;
-	border-top: 30px solid white;
 }
