@@ -1,7 +1,18 @@
+$offwhite: #F6F5F0;
 $black: #3A3A3A;
-$lred: #FF9580;
 
-.lred {
-	background: $lred;
-	color: white;
+$red: #FF9580;
+
+.black {
+	color: $black;
+}
+
+.white {
+	background: $offwhite;
+	color: $black;
+}
+
+.red {
+	background: $red;
+	color: #9a564a;
 }

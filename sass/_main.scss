@@ -4,6 +4,7 @@ section {
 		margin-bottom: 40px;
 		font-size: 32px;
 		font-weight: 700;
+		color: $offwhite;
 	}
 }
 
@@ -14,4 +15,8 @@ section {
 .align-center {
 	width: 100%;
 	margin: 0 auto;
+}
+
+.margin-top {
+	margin-top: 40px;
 }
