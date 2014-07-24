@@ -9,3 +9,31 @@
 		border-bottom: 0px;
 	}
 }
+
+.linkedin, .facebook, .twitter, .github, .lastfm {
+	@include transition(color .3s);
+}
+
+.linkedin {
+	&:hover {
+		color: #007BB6;
+	}
+}
+
+.twitter {
+	&:hover {
+		color: #1AB2E8;
+	}
+}
+
+.github {
+	&:hover {
+		color: #211F1F;
+	}
+}
+
+.lastfm {
+	&:hover {
+		color: #D8001A;
+	}
+}

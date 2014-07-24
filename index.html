@@ -21,13 +21,14 @@
 
 <header class="align-center">
 	<h1 id="typed-effect"></h1>
+    <h2 class="align-center">I'm Joseph Williams and I am currently working for the start-up <a href="http:/invstr.com" target="blank">invstr</a> as a Graphic and Web designer and <a href="http:/precisepixels.co.uk" target="blank">Precise Pixels</a> as a designer.</h2>
+    <div class="now-playing">It's all so quite...</div>
 <!--     <img class="arrow" src="img/arrow.png"> -->
 </header>
 
 
 <section class="section-padding align-center red">
 	<h1>What I'm about</h1>
-    <h2 class="align-center">I'm Joseph Williams and I am currently working for the start-up <a href="http:/invstr.com" target="blank">invstr</a> as a Graphic and Web designer and <a href="http:/precisepixels.co.uk" target="blank">Precise Pixels</a> as a designer.</h2>
     <h2 class="align-centre margin-top">I'm a fanatic of design and web development. I'm incredibly passtionate about what I do and I love to be able to follow briefs or contribute creatively.</h2>
     <div class="button align-center">CV</div>
 </section>
@@ -45,11 +46,10 @@
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <div class="icon- social">
-        <a href=""><i>i</i></a>
-        <a href=""><i>f</i></a>
-        <a href=""><i>t</i></a>
-        <a href=""><i>g</i></a>
-        <a href=""><i>l</i></a>
+        <a href="https://www.linkedin.com/pub/joseph-williams/52/39a/3a9" target="blank"><i class="linkedin">i</i></a>
+        <a href="https://twitter.com/faooful" target="blank"><i class="twitter">t</i></a>
+        <a href="https://github.com/faooful" target="blank"><i class="github">g</i></a>
+        <a href="http://www.last.fm/user/faooful" target="blank"><i class="lastfm">l</i></a>
     </div>
 </section>
 
@@ -60,10 +60,24 @@
 <script>
   $(function(){
       $("#typed-effect").typed({
-        strings: ["I consume cereal."],
+        strings: ["I make things."],
         typeSpeed: 30
       });
   });
+</script>
+
+<script type="text/javascript">
+    function get_spotify() {
+        $.ajax({
+            type: 'POST',
+            url: 'includes/lastfm.php',
+            data: { request: 'true' },
+            success: function(reply) {
+                $('.now-playing').html("<p>" + reply + "</p>");
+            }
+        });
+    }
+    window.onload = get_spotify;
 </script>
 
 <script>
