@@ -3,6 +3,7 @@
 
 <head>
   <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/magnific-popup.css" media="screen, projection" rel="stylesheet" type="text/css"/>
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -13,13 +14,8 @@
 
 <body>
 
-<nav>
-	<p>Home</p>
-	<p>Home</p>
-</nav>
-
 <header class="align-center">
-	<h1>Design</h1>
+<h1>Design</h1>
   <div class="gallery">
     <!-- GALLERY -->
 

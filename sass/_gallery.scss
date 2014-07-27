@@ -1,27 +1,38 @@
 .gallery {
+    img {
+        width: 100%;
+        @include opacity(.2);
+        @include transition(opacity .3s);
+    &:hover {
+        @include opacity(1);
+    }
+    }
 }
 
 #gallery-l {
-  float: left;
-  width: 50%;
-  height: auto;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 0;
-}
-#gallery-r {
-  float: left;
-  width: 50%;
-  height: auto;
-  overflow: hidden;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-size: 0;
+    float: left;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0;
+    img {
+        padding: 0 5px 5px 0;
+    }
 }
 
-#gallery-l img, #gallery-r img {
-  width: 100%;
+#gallery-r {
+    float: left;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 0;
+    img {
+        padding: 0 0 5px 5px;
+    }
 }
