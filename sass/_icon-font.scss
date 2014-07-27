@@ -23,6 +23,9 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-design:before {
+	content: "\64";
+}
 .icon-linkedin:before {
 	content: "\69";
 }
@@ -37,4 +40,13 @@
 }
 .icon-lastfm:before {
 	content: "\6c";
+}
+.icon-headphones:before {
+	content: "\68";
+}
+.icon-mail:before {
+	content: "\6d";
+}
+.icon-file-xml:before {
+	content: "\63";
 }
