@@ -8,7 +8,7 @@
 	cursor: pointer;
 	@include transition(background, color .3s);
 	&:hover {
-		color: $red;
+		color: $orange;
 		background: white;
 		border: 1px solid white;
 	}

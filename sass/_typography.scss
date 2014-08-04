@@ -13,5 +13,14 @@ h2 {
 
 a {
 	@include unstyled-link;
-	border-bottom: 1px dotted white;
+	padding: 7px;
+	border-radius: 25px;
+	background: white;
+	color: $orange;
+	font-weight: 700;
+}
+
+.cursive {
+	font-family: 'Lobster', cursive;
+	font-size: 20px;
 }
