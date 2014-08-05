@@ -11,7 +11,7 @@ h2 {
 	font-size: 17px;
 }
 
-a {
+.link {
 	@include unstyled-link;
 	padding: 7px;
 	border-radius: 25px;
