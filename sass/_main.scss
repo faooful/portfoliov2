@@ -24,3 +24,36 @@ section {
 .margin-top {
 	margin-top: 40px;
 }
+
+.whatimabout {
+	width: 100px;
+	i {
+		padding: 5px;
+		font-size: 30px;
+	}
+	p {
+		padding-top: 20px;
+		font-size: 20px;
+	}
+}
+
+.web, .design {
+	padding: 10px 0;
+}
+
+.design {
+	padding-top: 40px;
+}
+
+@media (min-width: 480px) {
+	.whatimabout {
+		width: 320px;
+	}
+	.web {
+		width: 50%;
+	}
+	.design {
+		width: 50%;
+		padding-top: 0;
+	}
+}

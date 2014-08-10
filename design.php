@@ -16,53 +16,56 @@
 
 <header class="align-center">
 <h1>Design</h1>
-  <div class="gallery">
+
+
+<div class="gallery">
     <!-- GALLERY -->
 
     <?php
-              
+
         $feed = simplexml_load_file('http://feed6.photobucket.com/albums/f83/faooful/img-gallery/feed.rss'); 
         $channel = $feed->channel;
 
         #LEFT
         echo '<div id="gallery-l"><div class="popup-gallery">';
         $i = 0;
-        
-          foreach($channel->item as $item):
-                if ( $i %2 == 0 ) { 
-                  $i++;
-                  continue; 
-                }
-                $image = $item->children('media', true)->content->attributes()->url;
+
+        foreach($channel->item as $item):
+            if ( $i %2 == 0 ) { 
                 $i++;
-          ?>
+                    continue; 
+                }
+            $image = $item->children('media', true)->content->attributes()->url;
+        $i++;
+    ?>
 
-              <a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
+    <a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
 
-        <?php endforeach;
+    <?php endforeach;
         echo '</div></div>';
 
         #RIGHT
         echo '<div id="gallery-r"><div class="popup-gallery">';
         $i = 0;
 
-          foreach($channel->item as $item):
-                if ( $i %2 != 0 ) { 
-                  $i++;
-                  continue; 
-                }
-                $image = $item->children('media', true)->content->attributes()->url;
+        foreach($channel->item as $item):
+            if ( $i %2 != 0 ) { 
                 $i++;
-          ?>
+                    continue; 
+                }
+            $image = $item->children('media', true)->content->attributes()->url;
+        $i++;
+    ?>
 
-              <a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
+    <a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
 
-        <?php endforeach;
+    <?php endforeach;
         echo '</div></div>';
-        ?> 
+    ?> 
 
-      <!-- GALLERY END -->
-      </div>
+    <!-- GALLERY END -->
+    </div>
+  
 </header>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
