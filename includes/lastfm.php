@@ -51,7 +51,7 @@ if (isset($last['@attr']['nowplaying'])) {
         } else
                 $time = $minutes . " minutes ago";
  
-        $output = "<i class=\"icon-headphones\"></i>I last listened to " . $last['name'] . ' by ' . $last['artist']['#text'] . " $time on Spotify";
+        $output = "<i class=\"icon-headphones\"></i>I last listened to " . $last['name'] . ' by ' . $last['artist']['#text'] . " $time";
  
         if ($short_titles) {
                 $output = sTrim($output);

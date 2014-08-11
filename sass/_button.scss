@@ -5,7 +5,7 @@ a {
 	width: 70px;
 	margin-top: 40px;
 	background: $blue;
-	border-radius: 25px;
+	@include border-radius(25px);
 	line-height: 2.5;
 	cursor: pointer;
 	color: white;

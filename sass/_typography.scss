@@ -14,7 +14,7 @@ h2 {
 .link {
 	@include unstyled-link;
 	padding: 7px;
-	border-radius: 25px;
+	@include border-radius(25px);
 	background: white;
 	color: $blue;
 	font-weight: 700;

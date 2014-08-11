@@ -12,61 +12,61 @@
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,700' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body class="white">
 
-<header class="align-center">
-<h1>Design</h1>
+<section class="section-padding align-center">
+    <h1 class="black">Design</h1>
+    <h2>Here is a collection of my Photoshop and Illustrator work</h2>
+</section>
 
 
-<div class="gallery">
-    <!-- GALLERY -->
+<div class="gallery align-center">
+<!-- GALLERY -->
 
-    <?php
+<?php
 
-        $feed = simplexml_load_file('http://feed6.photobucket.com/albums/f83/faooful/img-gallery/feed.rss'); 
-        $channel = $feed->channel;
+    $feed = simplexml_load_file('http://feed6.photobucket.com/albums/f83/faooful/img-gallery/feed.rss'); 
+    $channel = $feed->channel;
 
-        #LEFT
-        echo '<div id="gallery-l"><div class="popup-gallery">';
-        $i = 0;
+    #LEFT
+    echo '<div id="gallery-l"><div class="popup-gallery">';
+    $i = 0;
 
-        foreach($channel->item as $item):
-            if ( $i %2 == 0 ) { 
-                $i++;
-                    continue; 
-                }
-            $image = $item->children('media', true)->content->attributes()->url;
-        $i++;
-    ?>
+    foreach($channel->item as $item):
+        if ( $i %2 == 0 ) { 
+            $i++;
+                continue; 
+            }
+        $image = $item->children('media', true)->content->attributes()->url;
+    $i++;
+?>
 
-    <a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
+<a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a>
 
-    <?php endforeach;
-        echo '</div></div>';
+<?php endforeach;
+    echo '</div></div>';
 
-        #RIGHT
-        echo '<div id="gallery-r"><div class="popup-gallery">';
-        $i = 0;
+    #RIGHT
+    echo '<div id="gallery-r"><div class="popup-gallery">';
+    $i = 0;
 
-        foreach($channel->item as $item):
-            if ( $i %2 != 0 ) { 
-                $i++;
-                    continue; 
-                }
-            $image = $item->children('media', true)->content->attributes()->url;
-        $i++;
-    ?>
+    foreach($channel->item as $item):
+        if ( $i %2 != 0 ) { 
+            $i++;
+                continue; 
+            }
+        $image = $item->children('media', true)->content->attributes()->url;
+    $i++;
+?>
 
-    <a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
+<a href="<?= $image; ?>"><img src='<?= $image; ?>' alt=''/></a> 
 
-    <?php endforeach;
-        echo '</div></div>';
-    ?> 
+<?php endforeach;
+    echo '</div></div>';
+?> 
 
-    <!-- GALLERY END -->
-    </div>
-  
-</header>
+<!-- GALLERY END -->
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 

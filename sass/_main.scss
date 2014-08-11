@@ -39,21 +39,30 @@ section {
 
 .web, .design {
 	padding: 10px 0;
+	@include border-radius(25px);
+	@include transition(all .3s);
+	&:hover {
+		color: $offwhite;
+		background: $blue;
+	}
 }
 
 .design {
-	padding-top: 40px;
+	margin-top: 40px;
 }
 
 @media (min-width: 480px) {
 	.whatimabout {
+		height: 70px;
 		width: 320px;
+		padding-top: 40px;
 	}
-	.web {
+	.web, .design {
 		width: 50%;
+		float: left;
+		padding: 10px;
 	}
 	.design {
-		width: 50%;
-		padding-top: 0;
+		margin-top: 0;
 	}
 }
