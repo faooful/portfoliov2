@@ -1,0 +1,33 @@
+.webwork-wrapper {
+	max-width: 900px;
+	overflow: hidden;
+}
+
+.work-item {
+	width: 100%;
+	margin-bottom: 40px;
+	img {
+		width: 200px;
+		margin-bottom: 20px;
+		@include filter(grayscale(80%));
+		@include transition(.3s);
+		cursor: pointer;
+		&:hover {
+			@include filter(grayscale(0%));
+		}
+	}
+}
+
+@media (min-width: 500px) { 
+	.work-item {
+		width: 50%;
+		float: left;
+	}
+}
+
+@media (min-width: 800px) { 
+	.work-item {
+		width: 33.3%;
+		float: left;
+	}
+}
