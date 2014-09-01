@@ -18,10 +18,29 @@
 	}
 }
 
+.projectitem {
+	max-width: 800px;
+	overflow: hidden;
+	p {
+		margin-bottom: 40px;
+	}
+}
+
+.invstrproject-img {
+	width: 100%;
+	height: 200px;
+	background: url(http://i.huffpost.com/gen/1173122/thumbs/o-LUCY-COOKE-SLOTH-facebook.jpg) no-repeat;
+	@include background-size(cover);
+}
+
 @media (min-width: 500px) { 
 	.work-item {
 		width: 50%;
 		float: left;
+	}
+
+	.projectitem {
+		margin-bottom: 0;
 	}
 }
 

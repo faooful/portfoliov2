@@ -16,6 +16,19 @@
 
 <body class="white">
 
+<nav>
+    <label for="site-nav-toggle" id="nav-button">
+        <img class="burgericon" src="img/burgericon.png" alt="Burger icon"/>
+    </label>
+    <input type="checkbox" id="site-nav-toggle" class="checkbox-hack" autocomplete="off">
+    <ul id="site-nav">
+        <a href="https://invstr.com/index.html"><li>Home</li></a>
+        <a href="https://invstr.com/static/theapp.html"><li>The App</li></a>
+        <a href="https://invstr.com/static/aboutus.html"><li>About Us</li></a>
+    </ul>
+    <div id="nav-overlay"></div>
+</nav>
+
 <section class="section-padding align-center">
     <h1 class="black">Design</h1>
     <h2>Here is a collection of my Photoshop and Illustrator work</h2>
@@ -71,6 +84,8 @@
 </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="js/navoverlay.js"></script>
 
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <script>

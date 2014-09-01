@@ -17,16 +17,24 @@
 
 <body class="white">
 
-<!-- <nav>
-	
-	
-</nav> -->
+<nav>
+    <label for="site-nav-toggle" id="nav-button">
+        <img class="burgericon" src="img/burgericon.png" alt="Burger icon"/>
+    </label>
+    <input type="checkbox" id="site-nav-toggle" class="checkbox-hack" autocomplete="off">
+    <ul id="site-nav">
+        <a href="https://invstr.com/index.html"><li>Home</li></a>
+        <a href="https://invstr.com/static/theapp.html"><li>The App</li></a>
+        <a href="https://invstr.com/static/aboutus.html"><li>About Us</li></a>
+    </ul>
+    <div id="nav-overlay"></div>
+</nav>
 
 <header class="align-center">
 	<h1 id="typed-effect"></h1>
     <h2>I'm Joseph Williams and I strive to create what works well and what looks good for a long lasting solution.</h2>
     <div class="now-playing"><i class="icon-headphones"></i>It's all so quite...</div>
-    <a href="#"><div class="button align-center">CV</div></a>
+    <a href="#"><div class="button-blue align-center">CV</div></a>
 </header>
 
 
@@ -70,6 +78,8 @@
 
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="js/navoverlay.js"></script>
 
 <script>
 $(document).ready(function(){

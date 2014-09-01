@@ -1,14 +1,21 @@
 a {
 	@include unstyled-link;
-	.button {
+	.button-blue, .button-white {
 	height: 40px;
 	width: 70px;
 	margin-top: 40px;
-	background: $blue;
 	@include border-radius(25px);
 	line-height: 2.5;
 	cursor: pointer;
 	color: white;
 	@include transition(background, color .3s);
+	}
+	.button-blue {
+		background: $blue;
+	}
+	.button-white {
+		background: $offwhite;
+		color: $blue;
+		width: 120px;
 	}
 }
