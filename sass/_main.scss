@@ -25,7 +25,14 @@ section {
 	margin-top: 40px;
 }
 
-.half {
+.half-fourty {
+	width: 100%;
+	float: none;
+	text-align: left;
+	line-height: 2.5;
+}
+
+.half-sixty {
 	width: 100%;
 	float: none;
 	text-align: left;
@@ -74,10 +81,16 @@ section {
 	}
 }
 
-@media (min-width: 500px) {
-	.half {
-		width: 48%;
+@media (min-width: 600px) {
+	.half-sixty {
+		width: 58%;
 		float: left;
-		margin: 1%;
+		margin: 0 1% 0 1%;
+	}
+
+	.half-fourty {
+		width: 32%;
+		float: left;
+		margin: 0 4% 0 4%;
 	}
 }

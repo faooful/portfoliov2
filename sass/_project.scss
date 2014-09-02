@@ -1,0 +1,24 @@
+.project-padding {
+	padding: 120px 20px 0 20px;
+}
+
+.projectitem {
+	max-width: 800px;
+	height: 500px;
+	background: grey;
+}
+
+.projectitem-information {
+	max-width: 1000px;
+	overflow: hidden;
+}
+
+.projectitem-description {
+	padding-bottom: 40px;
+}
+
+@media (min-width: 600px) {
+	.projectitem-description {
+		padding-bottom: 0;
+	}
+}
