@@ -6,7 +6,7 @@
     
     <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <link href="stylesheets/magnific-popup.css" media="screen, projection" rel="stylesheet" type="text/css"/>
-    <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/animate.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <!--[if IE]>
         <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
     <![endif]-->
@@ -22,16 +22,16 @@
     </label>
     <input type="checkbox" id="site-nav-toggle" class="checkbox-hack" autocomplete="off">
     <ul id="site-nav">
-        <a href="https://invstr.com/index.html"><li>Home</li></a>
-        <a href="https://invstr.com/static/theapp.html"><li>The App</li></a>
-        <a href="https://invstr.com/static/aboutus.html"><li>About Us</li></a>
+        <a href="http://www.faooful.com/index.html"><li>Home</li></a>
+        <a href="http://www.faooful.com/web.html"><li>Web</li></a>
+        <a href="http://www.faooful.com/design.php"><li>Design</li></a>
     </ul>
     <div id="nav-overlay"></div>
 </nav>
 
 <section class="section-padding align-center">
-    <h1 class="black">Design</h1>
-    <h2>Here is a collection of my Photoshop and Illustrator work</h2>
+    <h1 class="black wow fadeInDown">Design</h1>
+    <h2 class="wow fadeInDown">Here is a collection of my Photoshop and Illustrator work</h2>
 </section>
 
 
@@ -83,9 +83,38 @@
 <!-- GALLERY END -->
 </div>
 
+<section class="section-padding align-center blue">
+    <h1 class="wow fadeInDown">Contact</h1>
+    <h2 class="align-centre wow fadeInDown">Got an idea or want to chat?</h2>
+    <h2 class="wow fadeInDown"><a href="mailto:faooful@gmail.com">faooful@gmail.com</a></h2>
+    <div id="twitter-wrapper wow fadeInDown">
+        <a class="twitter-timeline" href="https://twitter.com/faooful" data-widget-id="491568533289963521" data-tweet-limit="1" data-chrome="noheader">Tweets by @faooful</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <div class="icon- social wow fadeInDown">
+        <a href="https://www.linkedin.com/pub/joseph-williams/52/39a/3a9" target="_blank"><i class="linkedin">i</i></a>
+        <a href="https://twitter.com/faooful" target="_blank"><i class="twitter">t</i></a>
+        <a href="https://github.com/faooful" target="_blank"><i class="github">g</i></a>
+        <a href="http://www.last.fm/user/faooful" target="_blank"><i class="lastfm">l</i></a>
+    </div>
+</section>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
 <script src="js/navoverlay.js"></script>
+
+<script src='js/wow.min.js'></script>
+<script>
+var wow = new WOW(
+  {
+    boxClass:     'wow',        // animated element css class (default is wow)
+    animateClass: 'animated',   // animation css class (default is animated)
+    offset:       500,          // distance to the element when triggering the animation (default is 0)
+    mobile:       false        // trigger animations on mobile devices (true is default)
+  }
+);
+new WOW().init();
+</script>
 
 <script src="js/jquery.magnific-popup.min.js"></script> 
 <script>

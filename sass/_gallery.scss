@@ -1,4 +1,5 @@
 .gallery {
+    overflow: hidden;
     img {
         width: 100%;
         @include opacity(1);
@@ -18,7 +19,7 @@
 
 #gallery-l {
     float: left;
-    width: 50%;
+    width: 100w%;
     height: auto;
     overflow: hidden;
     text-align: center;
@@ -30,13 +31,19 @@
 
 #gallery-r {
     float: left;
-    width: 50%;
+    width: 100w%;
     height: auto;
     overflow: hidden;
     text-align: center;
     font-size: 0;
     img {
         padding: 0 0 5px 5px;
+    }
+}
+
+@media (min-width: 800px) {
+    #gallery-l, #gallery-r {
+        width: 50%;
     }
 }
 

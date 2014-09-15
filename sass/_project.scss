@@ -2,6 +2,11 @@
 	padding: 120px 20px 0 20px;
 }
 
+.project-title {
+	font-size: 24px;
+	margin-bottom: 40px;
+}
+
 .projectitem {
 	width: 100%;
 	max-width: 1000px;
@@ -15,6 +20,12 @@
 
 .projectitem-description {
 	padding-bottom: 40px;
+	p {
+		a {
+			text-decoration: underline;
+			font-weight: 700;
+		}
+	}
 }
 
 @media (min-width: 600px) {
