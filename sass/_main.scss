@@ -25,6 +25,24 @@ section {
 	margin-top: 40px;
 }
 
+.margin-bottom {
+	margin-bottom: 40px;
+}
+
+.padding-top {
+	padding-top: 40px;
+}
+
+.overflow {
+	overflow: hidden;
+}
+
+.half {
+	width: 100%;
+	float: none;
+	text-align: center;
+}
+
 .half-fourty {
 	width: 100%;
 	float: none;
@@ -39,11 +57,19 @@ section {
 	line-height: 2.5;
 }
 
+.third {
+	width: 100%;
+}
+
+.half-container {
+	max-width: 850px;
+}
+
 .whatimabout {
 	width: 100px;
 	i {
 		padding: 5px;
-		font-size: 30px;
+		font-size: 50px;
 	}
 	p {
 		padding-top: 20px;
@@ -56,8 +82,7 @@ section {
 	@include border-radius(25px);
 	@include transition(all .3s);
 	&:hover {
-		color: $offwhite;
-		background: $blue;
+		color: $blue;
 	}
 }
 
@@ -92,5 +117,23 @@ section {
 		width: 32%;
 		float: left;
 		margin: 0 4% 0 4%;
+	}
+}
+
+@media (min-width: 850px) {
+	.half {
+		width: 48%;
+		margin: 1%;
+		float: left;
+		text-align: left;
+	}
+
+	.half-right {
+		float: right;
+	}
+
+	.third {
+		width: 31%;
+		margin: 1%;
 	}
 }

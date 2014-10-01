@@ -25,6 +25,7 @@
         <a href="http://www.faooful.com/index.html"><li>Home</li></a>
         <a href="http://www.faooful.com/web.html"><li>Web</li></a>
         <a href="http://www.faooful.com/design.php"><li>Design</li></a>
+        <a href="http://www.faooful.com/video.html"><li>Video / Animation</li></a>
     </ul>
     <div id="nav-overlay"></div>
 </nav>
